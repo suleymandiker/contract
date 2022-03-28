@@ -11,7 +11,10 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 contract ChickenRunV5 is ERC721Upgradeable {
     // Royalty
     address private _owner;
+    // ? _royaltiesAddr bu kısma hangi adresleri ekleyeceğiz?
     address private _royaltiesAddr; // royality receiver
+    // ? Bu kısma yüzde kaç oran belirleyeceğiz?
+    //? https://eips.ethereum.org/EIPS/eip-2981#rationale
     uint256 public royaltyPercentage; // royalty based on sales price
     mapping(address => bool) public excludedList; // list of people who dont have to pay fee
 
