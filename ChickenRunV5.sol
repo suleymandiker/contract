@@ -16,9 +16,11 @@ contract ChickenRunV5 is ERC721Upgradeable {
     // ? Bu kısma yüzde kaç oran belirleyeceğiz?
     //? https://eips.ethereum.org/EIPS/eip-2981#rationale
     uint256 public royaltyPercentage; // royalty based on sales price
+    //? nft alırken fee ödemeyecek listeyi neye göre oluşturacağız?
     mapping(address => bool) public excludedList; // list of people who dont have to pay fee
 
     //GB HOLDERS EARLY ACCESS TOKENS
+    //? GB Holder listesini nasıl belirleyeceğiz
     uint256 public constant gbHoldersMaxMint = 900;
     mapping(address => bool) public gbholders;
 
